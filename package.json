@@ -1,0 +1,29 @@
+{
+  "name": "our-server",
+  "version": "1.0.0",
+  "description": "our server from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo",
+    "our",
+    "first",
+    "server"
+  ],
+  "author": "Jayesh Prajapati",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.8"
+  }
+}
