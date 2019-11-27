@@ -1,0 +1,11 @@
+name: github-actor
+
+on: [push,pull_request]
+
+jobs:
+  private:
+    name: greetings
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Greetings Message
+        run: echo Hi, ${GITHUB_ACTOR}
