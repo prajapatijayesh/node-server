@@ -14,12 +14,16 @@ router.post('/addNumber', function (req, res, next) {
 
 router.get('/getNumbers', function (req, res, next) {
     userModal.find({}).then(function (_users) {
-        res.jsonp({ 'status': 'Success', object: _users });
+        res.jsonp({ 'status': 'success', object: _users });
     });
 });
 
 router.post('/signup', (req, res, next) => {
-    res.jsonp({ status: 'Success', message: 'SMS Sent' });
+    res.jsonp({ status: 'success', message: 'SMS Sent' });
+});
+
+router.post('/verify_otp', (req, res, next) => {
+    res.jsonp({ status: 'success', message: 'success' });
 });
 
 module.exports = router;
