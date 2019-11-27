@@ -1,0 +1,12 @@
+name: verify-reviewers
+
+on: [pull_request]
+
+jobs:
+  reviewers:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: verify-reviewers
+        if: github.event_name == 'pull_request' && github.event.action == 'unassigned'
+        run: echo Hi, ${GITHUB_ACTOR} please add Reviewers
+   
