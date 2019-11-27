@@ -7,6 +7,5 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: verify-reviewers
-        if: github.event_name == 'pull_request' && github.event.action == 'unassigned'
-        run: echo This event is a pull request that had an assignee removed.
+        run: echo ${github.event_name} ${github.event}  This event is a pull request that had an assignee removed.
    
