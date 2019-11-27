@@ -1,13 +1,12 @@
 name: verify-reviewers
 
-on:
-  pull_request:
-    types: [opened,unassigned]
+on: [pull_request]
 
 jobs:
   reviewers:
     runs-on: [ubuntu-latest]
     steps:
       - name: verify-reviewers
-        run: echo Hi, ${GITHUB_ACTOR} please add Reviewers
+        if: github.event_name == 'pull_request' && github.event.action == 'unassigned'
+        run: echo This event is a pull request that had an assignee removed.
    
