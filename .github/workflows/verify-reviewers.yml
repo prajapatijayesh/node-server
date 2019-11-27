@@ -1,0 +1,11 @@
+name: verify-reviewers
+
+on: [pull_request]
+
+jobs:
+  reviewers:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: verify-reviewers
+        run: echo ${github.event_name} ${github.event}  This event is a pull request that had an assignee removed.
+   
