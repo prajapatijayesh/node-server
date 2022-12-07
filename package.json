@@ -22,8 +22,8 @@
   "author": "Jayesh Prajapati",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "mongoose": "^4.9.8"
   }
 }
